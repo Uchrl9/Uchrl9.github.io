@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday Suvd-Erdene! 🎂</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 2s;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            color: #ff1493;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.5em;
+            color: #4a4a4a;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .photo-gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .cake-container {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+        
+        .cake-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .message-box {
+            background: linear-gradient(45deg, #f3ec78, #af4261);
+            padding: 25px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+            animation: slideUp 1s;
+        }
+        
+        .message-box h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .message-box p {
+            font-size: 1.7em;
+            line-height: 1.6;
+        }
+        
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .music-btn {
+            background: #ff1493;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .music-btn:hover {
+            background: #ff6eb4;
+            transform: scale(1.05);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2em; }
+            .header p { font-size: 1.2em; }
+            .photo-gallery img { width: 150px; height: 150px; }
+            .cake-container { height: 500px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="Futuroma -  Udesh.mp3" type="audio/mp3">
+        <!-- Fallback if MP3 doesn't work -->
+    </audio>
+    
+    <div class="music-control">
+        <button class="music-btn" onclick="toggleMusic()">
+            🎵 Play Music
+        </button>
+    </div>
+    
+    <div class="container">
+        <!-- Personalized Header -->
+        <div class="header">
+            <h1>🎉 Happy Birthday Suvd-Erdene! 🎉</h1>
+        
+        <!-- Your Personal Message -->
+        <div class="message-box">
+            
+            <p>   Proud of your all dedications and hard work.
+                  Always remind that you are doing great enough.
+                 Blow through your photo microphone and make a wish.
+                
+                    
+                <br><br>
+                     Happy 19 ! 
+            </p>
+        </div>
+        
+        <!-- Photo Gallery -->
+        <h2 style="text-align: center; margin: 30px 0 20px;">😁😁😁😁😁😁😁</h2>
+        <div class="photo-gallery">
+            <!-- Replace with YOUR photos -->
+            <img src="650369513_4271730149742087_1470262417517331600_n.jpg" alt="Memory 1">
+            <img src="646556702_1245503493808633_5690521761506465935_n.jpg" alt="Memory 2">
+            <img src="647552737_1303005181782689_3449361326988060397_n.jpg" alt="Memory 3">
+            <img src="648771399_1249863517119810_39738906455245355_n.jpg" alt="Memory 4">
+        </div>
+        
+        <!-- Birthday Cake Blowing Section -->
+        <h2 style="text-align: center; margin: 30px 0 20px;">🎂 Blow Out Your Candles!</h2>
+        <div class="cake-container">
+            <!-- IMPORTANT: Replace with YOUR birthday-cake.online link -->
+            <iframe src="https://www.birthday-cake.online/?config=N4IgNghgdg5iBcICmUQBoQGcliQYwBckATAYQgGskBJYhZXGaAgWkwICcIB3AIyQ4cAnuhB4A9lABmASxilxAWwAOuInXicArkgx5oxXABUhypPWJyZBTKP1RDSBVqgEEARgAcGSzGu3EdwBOURlMAFEADwIZWC0wgAsSBCkIMGwMMIAhMHFuWLh4VPTdEF5c-NgABQ5xGA4kTACABj0tdiVyKgDgAF8MdoEAOQhFc0QAZQBVADUAERZwgCU58KHwu3aCJQBZRswIGHGQCaMAQQBNAAJTpYB5IYBxK4B1aiMACSuLu6mlq9Idx21CeVzOcxmayMf3CEyugF4NwBQe6I-AA3YajY4gXpAA" allow="microphone"></iframe>
+        </div>
+        
+        <!-- Footer Note -->
+        <p style="text-align: center; margin-top: 30px; color: #666;">
+            Scan the QR code again anytime to relive the magic! ✨
+        </p>
+    </div>
+    
+    <script>
+        // Music Control
+        let music = document.getElementById('bg-music');
+        let isPlaying = false;
+        
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+                document.querySelector('.music-btn').textContent = '🎵 Play Music';
+            } else {
+                music.play();
+                document.querySelector('.music-btn').textContent = '🎵 Pause Music';
+            }
+            isPlaying = !isPlaying;
+        }
+        
+        // Auto-play music when user interacts with the page (browsers require user interaction)
+        document.addEventListener('click', function initMusic() {
+            music.play().then(() => {
+                isPlaying = true;
+                document.querySelector('.music-btn').textContent = '🎵 Pause Music';
+            }).catch(e => console.log('Auto-play prevented'));
+            document.removeEventListener('click', initMusic);
+        }, { once: true });
+        
+        // Optional: Play celebration sound when candles are blown
+        window.addEventListener('message', function(event) {
+            // If birthday-cake.online sends a "candles blown" message
+            if (event.data === 'candles-blown') {
+                // Play a special sound or show extra confetti
+                alert('🎊 Yay! Your wish is made! 🎊');
+            }
+        });
+    </script>
+</body>
+</html>
